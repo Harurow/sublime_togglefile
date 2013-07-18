@@ -7,8 +7,13 @@ import fnmatch
 class TogglefileCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_name = self.view.file_name()
+
+		if not file_name:
+			return
+
 		base_name = os.path.basename(file_name)
 		dir_name = os.path.dirname(file_name)
+
 
 		first_dot_index = base_name.find('.')
 		if first_dot_index == -1:
