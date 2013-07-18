@@ -1,0 +1,20 @@
+{
+	"schema_version": "1.2",
+	"packages": [
+		{
+			"name": "Toggle File",
+			"description": "Toggle Open Files",
+			"author": "Motoharu Tsubaki",
+			"homepage": "https://github.com/Harurow/sublime_togglefile",
+			"last_modified": "2013-07-18 16:55",
+			"platforms": {
+				"*": [
+					{
+						"version": "1.0.0",
+						"url": "https://nodeload.github.com/Harurow/sublime_togglefile/zip/master"
+					}
+				]
+			}
+		}
+	]
+}
