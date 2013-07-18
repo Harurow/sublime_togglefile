@@ -1,10 +1,29 @@
-Toggle File for Sublime Text
-============================
-Sublime Text2 plug-in. toggle files.
+# Toggle File for Sublime Text plug-in
+
+Sublime Text plug-in. toggle files.
+
+This plug-in can open the file which has the dependence mutually.
+
+ex)
+* hogehoge.cpp <=> hogehoge.h
+* foogaa.cs <=> foogaa.design.cs
+
+## how to Install ##
+
+With [Package Control](http://wbond.net/sublime_packages/package_control):
+
+1. Run “Package Control: Install Package” command, find and install `Toggle file` plugin.
+
+Manually:
+
+1. Clone or [download](https://github.com/Harurow/sublime_togglefile/archive/master.zip) git repo into your packages folder (in ST, find Browse Packages... menu item to open this folder)
 
 
-License
--------
+## Available actions ##
+
+* [Toggle file] - <kbd>⌘.</kbd> for mac, <kbd>CTRL+.</kbd> for Windows, Linux
+
+## License
 The MIT License (MIT)
 
 Copyright (c) 2013 Motoharu Tsubaki.
