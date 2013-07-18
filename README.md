@@ -8,7 +8,7 @@ ex)
 * hogehoge.cpp <=> hogehoge.h
 * foogaa.cs <=> foogaa.design.cs
 
-## how to Install ##
+## How to Install ##
 
 With [Package Control](http://wbond.net/sublime_packages/package_control):
 
