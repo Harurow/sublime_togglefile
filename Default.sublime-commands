@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Toggle File: Goto Dependence file",
+		"command": "togglefile"
+	}
+]
