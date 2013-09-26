@@ -1,6 +1,6 @@
 # Toggle File for Sublime Text plug-in
 
-Sublime Text plug-in. toggle files.
+Sublime Text 2/3 plug-in. toggle files.
 
 This plug-in can open the file which has the dependence mutually.
 
