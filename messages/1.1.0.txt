@@ -1,0 +1,5 @@
+ToggleFile 1.1.0
+
+New
+ * Added [Toggle file (Reverse)] - <kbd>⇧⌘.</kbd> for mac, <kbd>CTRL+SHIFT+.</kbd> for Windows, Linux
+

@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
-import sublime
 import sublime_plugin
 import os.path
 import fnmatch
 
-class TogglefileCommand(sublime_plugin.TextCommand):
+class ToggleFile(sublime_plugin.TextCommand):
 	def run(self, edit):
 		file_name = self.view.file_name()
 
 		if not file_name:
 			return
+		self.toggle(file_name)
 
+	def toggle(self, file_name):
 		base_name = os.path.basename(file_name)
 		dir_name = os.path.dirname(file_name)
-
 
 		first_dot_index = base_name.find('.')
 		if first_dot_index == -1:
@@ -29,6 +29,8 @@ class TogglefileCommand(sublime_plugin.TextCommand):
 			return
 
 		same_names.sort()
+		if self.reverse:
+			same_names.reverse()
 
 		open_name = same_names[(same_names.index(base_name) + 1) % len(same_names)]
 
@@ -39,3 +41,15 @@ class TogglefileCommand(sublime_plugin.TextCommand):
 			if fnmatch.fnmatch(file_name, p):
 				return False
 		return True
+
+
+class TogglefileCommand(ToggleFile):
+	def __init__(self, view):
+		ToggleFile.__init__(self, view)
+		self.reverse = False
+
+
+class TogglefilerevCommand(ToggleFile):
+	def __init__(self, view):
+		ToggleFile.__init__(self, view)
+		self.reverse = True

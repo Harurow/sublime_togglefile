@@ -7,6 +7,7 @@ This plug-in can open the file which has the dependence mutually.
 ex)
 * hogehoge.cpp <=> hogehoge.h
 * foogaa.cs <=> foogaa.design.cs
+* web.aspx <=> web.aspx.cs <=> web.aspx.resx
 
 ## How to Install ##
 
@@ -22,6 +23,7 @@ Manually:
 ## Available actions ##
 
 * [Toggle file] - <kbd>⌘.</kbd> for mac, <kbd>CTRL+.</kbd> for Windows, Linux
+* [Toggle file (Reverse)] - <kbd>⇧⌘.</kbd> for mac, <kbd>CTRL+SHIFT+.</kbd> for Windows, Linux
 
 ## License
 The MIT License (MIT)

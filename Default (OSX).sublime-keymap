@@ -1,3 +1,4 @@
 [
-	{ "keys": ["super+."], "command": "togglefile" }
+	{ "keys": ["super+."], "command": "togglefile" },
+	{ "keys": ["super+shift."], "command": "togglefilerev" }
 ]
