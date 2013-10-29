@@ -40,8 +40,6 @@ class ToggleFile(sublime_plugin.TextCommand):
 			same_names = []
 			for dname in dirs:
 				self.getfiles(same_names, dname, body_name)
-
-			print (same_names)
 		else:
 			same_names = []
 			for fname in os.listdir(dir_name):
