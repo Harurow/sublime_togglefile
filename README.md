@@ -8,6 +8,7 @@ ex)
 * hogehoge.cpp <=> hogehoge.h
 * foogaa.cs <=> foogaa.design.cs
 * web.aspx <=> web.aspx.cs <=> web.aspx.resx
+* web.aspx <=> web.aspx.cs <=> web.aspx.resx <=> js/web.js
 
 ## How to Install ##
 

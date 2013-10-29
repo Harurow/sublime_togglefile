@@ -1,0 +1,6 @@
+ToggleFile 1.2.0
+================
+
+New
+ * Add 'seach_other_folder' option (default true)
+   This option is search opened folders.
