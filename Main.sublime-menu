@@ -1,5 +1,25 @@
 [
 	{
+		"caption": "Goto",
+		"mnemonic": "G",
+		"id": "goto",
+		"children":
+		[
+			{
+				"caption": "Switch File",
+				"mnemonic": "t",
+				"id": "switch_file",
+				"children":
+				[
+					{ "caption": "-" },
+					{ "caption": "Goto Dependence file", "command": "togglefile" },
+					{ "caption": "Goto Dependence file (Reverse)", "command": "togglefilerev" },
+					{ "caption": "-" }
+				]
+			}
+		]
+	},
+	{
 		"caption": "Preferences",
 		"mnemonic": "n",
 		"id": "preferences",
@@ -14,18 +34,18 @@
 					{
 						"caption": "ToggleFile",
 						"children":
-							[
-								{
-									"command": "open_file",
-									"args": {"file": "${packages}/ToggleFile/togglefile.sublime-settings"},
-									"caption": "Settings – Default"
-								},
-								{
-									"command": "open_file",
-									"args": {"file": "${packages}/User/togglefile.sublime-settings"},
-									"caption": "Settings – User"
-								}
-							]
+						[
+							{
+								"command": "open_file",
+								"args": {"file": "${packages}/ToggleFile/togglefile.sublime-settings"},
+								"caption": "Settings – Default"
+							},
+							{
+								"command": "open_file",
+								"args": {"file": "${packages}/User/togglefile.sublime-settings"},
+								"caption": "Settings – User"
+							}
+						]
 					}
 				]
 			}
